@@ -198,3 +198,60 @@ Here are some important considerations for you to add your unit tests:
 - If you run into problems with the code you wrote in the last task while drafting unit tests, fix it! The goal of testing in this instance is to refine the draft codebase you created in the last task into something that’s guaranteed to work.
 
 Estimated time for task completion: 1 hour depending on your learning style.
+
+---
+---
+
+# Task 4
+
+Before we begin, let’s recap what we’ve worked on so far as a Lyft Back-End engineer:
+
+- In task 1, you drafted a newly designed architecture for your component;
+- In task 2, you refactored the messy codebase; and
+- In task 3, you introduced unit tests for your newly refactored system.
+
+In this final task, you’ll be asked to add some new functionality to the system. You will be using a test-driven development workflow - often abbreviated TDD - to make the changes.
+
+TDD is a hybrid workflow that combines testing, coding and refactoring, where you constantly bounce back and forth between writing code and writing test cases for it. The workflow encourages good habits, helps you consider all possible edge cases, and leads to a robust, comprehensive test suite upon completion of the project.
+
+---
+### Is TDD the gold standard workflow for writing code?
+
+The short-answer is no.
+
+TDD is not the best or the only coding workflow - every programmer develops (through much time and experience) their own processes, which work for them.
+
+Some software engineers swear by it, some can’t stand it; neither is made a better developer for their view of the paradigm.
+
+Figuring out what works for you requires years of practice and refinement, so as you take your first steps out of the syntax nursery and into the mystical world of theory, it’s important to expose yourself to the various competing schools of thought built around writing clean code.
+
+TDD is a classic approach, and even if you don’t strictly adhere to the admittedly rigid testing cadence in the workflow you develop, there are still valuable lessons to be garnered from the doctrine. The most important thing to remember is to eschew dogma in favor of what actually works for you, provided you take the time to fully comprehend and play with the workflows you have available.
+
+---
+
+## Ready to practice test-driven development?
+
+Using the same codebase you’ve been working on throughout this program, your task is to add some new functionality.
+
+Throughout this task, you should use a test-driven development workflow - write tests that check for the expected behavior, write code to satisfy those tests, rinse and repeat.
+
+In adding new functionality, you will be making the following two changes:
+
+- Upgrade Spindler batteries
+  
+  1. First, modify the Spindler battery so it requires service after three years instead of two.
+  2. Notice how easy it is to make this change - you only need to touch one line of code instead of several, and the place where that line of code lives should be immediately obvious.
+  3. Consider what steps would have been required to make this change to the original system architecture, and how much more difficult it would have been, especially if you were new to working on the codebase.
+
+- Add tire servicing criteria
+  1. There are two types of tires currently in use by the Lyft fleet - Carrigan tires and Octoprime tires.
+  2. The new tire wear sensors produce an array of four numbers between 0 and 1 inclusive, representing how worn each of the tires are.
+  3. This array will be passed to each function in the car factory class, to be used by your tire implementation.
+  4. Carrigan tires should be serviced only when one or more of the values in the tire wear array is greater than or equal to 0.9.
+  5. Octoprime tires should be serviced only when the sum of all values in the tire wear array is greater than or equal to 3.
+  6. Think carefully about the cleanest way to implement the new tire service criteria, then modify the system to complete the change.
+
+Estimated time for task completion: 1 hour depending on your learning style.
+
+---
+---
