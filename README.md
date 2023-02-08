@@ -83,3 +83,65 @@ With this in mind, it’s very important that the component is extensible and ea
 Tacking this functionality onto the current system would be difficult and messy - instead, you have been instructed to take the time to refactor the codebase prior to making the change. The first step of this process is to draft up a new (clean) system architecture that will allow for the seamless inclusion of the new functionality. Your task is to draft and submit a class diagram that maps out how the system will be reorganized.
 
 Now we understand this background information, let’s get started with the task.
+
+---
+---
+
+# Task 1 
+
+To begin to take over the work on the unfinished component, we need to clone the starter repository to your machine.
+
+In this step, you will need to clone the following repo to your machine: https://github.com/vagabond-systems/forage-lyft-starter-repo
+
+The repo you just cloned contains the core functionality of the fleet service component referenced above. In order to come up with a better design, you must first fully comprehend the current state of the codebase. Spend some time reading through each file and figuring out how things are organized.
+
+ ###  In this last step of the task, you will draft a UML class diagram that represents a new reorganized architecture.
+
+Now that you have a good handle on the current system, think through the best way it could be reorganized. Your plan should allow easy extensibility going forward. It should be easy for future team members to add new service criteria and change which parts each car model includes (e.g. change the battery installed on the Thovex from a Nubbin to a Spindler).
+
+Additionally, making a change to the service criteria for a given car part should only require making a change in one place. If you are having trouble coming up with a good design, take a look at the following resources:
+
+- https://en.wikipedia.org/wiki/Composition_over_inheritance
+- https://sourcemaking.com/design_patterns/behavioral_patterns
+- https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/
+
+Estimated time for task completion: 1 hour depending on your learning style.
+
+---
+---
+
+# Task 2
+
+Let’s bring some order to the messy code you’ve been given.
+
+So, now that you’ve set out a new reorganized architecture, what’s next?
+
+It’s time to roll up our sleeves and get to know the code that we’re working with. A good starting point for us is to refactor the existing code that we’ve inherited. Don’t worry if you haven’t done any code refactoring before, we’ll take you through each step and provide support along the way.
+
+Let's go!
+
+---
+
+## What is code refactoring
+So let’s start with understanding what code refactoring is:
+
+- Refactoring is the art of reorganizing a codebase without modifying its behavior.
+- Any code that exists longer than the duration of a school project is fluid - it is a living, changing thing. No codebase is open and shut, there are always bugs to thump and features to add.
+- As a codebase grows older, it begins to accumulate code smells. New features are tacked on, dirty fixes are settled for, and technical debt is accrued. All of these things contribute to the overall messiness of the project.
+- Did you say smells? Yes, code smells are indicators of problems that can be addressed during refactoring.
+- While code smells do not hamper the correctness of a system, they do impair your ability to make changes, and tend to fill programmers with a sense of lingering dread. Eventually, the aroma becomes unbearable, and the decision is made to refactor. Refactoring is cleanliness, and cleanliness is what separates code that lasts from code that doesn’t.
+
+The goal of this task is to rewrite the codebase to bring it in line with the new design. So with that in mind, spend some time understanding:
+
+- How each class fits together
+- What is the justification for each design decision
+- How that new design might be reflected in the existing messy codebase
+
+If any part of the diagram confuses you, read through the resources below:
+
+- https://refactoring.guru/design-patterns/factory-method
+- https://refactoring.guru/design-patterns/strategy
+
+Pay special attention to the strategy and factory patterns.
+
+Once you’ve deeply understood the new system architecture, get started.
