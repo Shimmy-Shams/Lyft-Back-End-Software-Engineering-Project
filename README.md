@@ -187,3 +187,14 @@ Some key points to consider when writing your unit tests are:
 - That being said, this task is focused on unit testing as it applies to refactoring, so, for the sake of time, you may assume all inputs to the system are valid (i.e all parameters are the expected type and all values are within reasonable bounds).
 
 ---
+## Instructions for adding unit tests
+Using the same repo you’ve been working on over the course of this program, add unit tests to the codebase.
+
+Here are some important considerations for you to add your unit tests:
+
+- You’ll need to replace the old test suite in the tests folder with your own series of unit tests.
+- The old test suite should be broken (since you replaced all the classes it tests in the last step), but it should still serve as a handy template to speed you on your way.
+- Note that you need only test concrete implementations of the engine and battery classes for this task. You may ignore testing on everything else.
+- If you run into problems with the code you wrote in the last task while drafting unit tests, fix it! The goal of testing in this instance is to refine the draft codebase you created in the last task into something that’s guaranteed to work.
+
+Estimated time for task completion: 1 hour depending on your learning style.
