@@ -145,3 +145,45 @@ If any part of the diagram confuses you, read through the resources below:
 Pay special attention to the strategy and factory patterns.
 
 Once you’ve deeply understood the new system architecture, get started.
+
+---
+---
+
+# Task 3 
+
+Now you have a good understanding of your newly designed component & you’ve refactored the code - it’s time to write some unit tests.
+
+Firstly, let’s understand what unit tests are and why they an imperative part of any coding workflow.
+
+- Put simply, a unit test is a software testing method whereby “units” — the individual components that make up software — are tested.
+- Software Engineers write unit tests for their code in order to make sure the code works as expected. This helps to detect any errors and protect against bugs. 
+- Unit tests are necessary for any production system, and directly correlate with the quality of sleep everyone on the engineering team experiences.
+
+---
+Unit tests serve many purposes, the most of which are outlined below:
+
+- Unit tests most obviously provide a means of assessing the correctness of a system. They describe the expected behavior of a piece of code, and allow you to check that it works with the click of a button. It’s easy to miss something with static analysis alone - unit tests give you instantaneous, quantitative feedback regarding whether the system works as expected.
+
+- Unit tests provide a sort of documentation for the code - describing expected inputs and outputs, as well as the correct way to use a component. By reading the unit tests for a codebase you are unfamiliar with, you can gain a clearer understanding of how each component should be used, and how they fit together.
+
+- Unit tests allow you to easily check if a change to the system breaks something. Suppose you modify part A of the system, which is tightly coupled with part B - by running the unit tests for part B, you can instantly ensure that your change did not break that component (provided the tests are written well).
+
+- Unit tests provide yet another way to assess the cleanliness of your codebase. If a piece of code is difficult to test, it is almost always a code smell. Clean code is easy to test; if you are struggling to write clean tests for a piece of code, chances are the code needs to be reorganized, not the tests.
+
+- Unit tests assist in development using workflows like TDD (test-driven development). By writing unit tests as you code, you are granted all of the above metrics and indications immediately. They can then respond to them as they crop up. We’ll circle back to this point in the next task.
+
+- Unit tests provide a sandbox for thoroughly considering every edge case. The art of writing a good test case is the art of coming up with clever ways to break your own code. By spending time considering all the ways your code could malfunction in a chaotic fashion and hardening your code against them, you will end up with a more robust codebase.
+
+In this task, you will focus primarily on unit tests as a means of ensuring the correctness of a system.
+
+Engineers at Lyft take an immense amount of pride in their work, so pushing an untested component to production would be unthinkable!
+
+Your task is to write unit tests for each of the battery and engine classes in the codebase.
+
+Some key points to consider when writing your unit tests are:
+
+- In a real-world environment, you should always check that parameters are what you expect, especially in a loosely typed language like Python. Part of the point of unit testing is to ensure your system does not fail in the presence of edge cases, including ridiculous ones (users can’t be trusted with anything these days).
+
+- That being said, this task is focused on unit testing as it applies to refactoring, so, for the sake of time, you may assume all inputs to the system are valid (i.e all parameters are the expected type and all values are within reasonable bounds).
+
+---
